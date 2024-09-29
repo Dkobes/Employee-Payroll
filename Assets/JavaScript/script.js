@@ -6,9 +6,9 @@ const collectEmployees = function () {
     let addingEmployees = true;
 
     while (addingEmployees) {
-        const firstName = prompt("Enter employee's first name:");
-        const lastName = prompt("Enter employee's last name:");
-        let salary = prompt("Enter employee's salary:");
+        const firstName = prompt("Enter the employee's first name:");
+        const lastName = prompt("Enter the employee's last name:");
+        let salary = prompt("Enter the employee's salary:");
     }
     salary = isNaN(salary) ? 0 : Number(salary); 
 
