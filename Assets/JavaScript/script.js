@@ -10,18 +10,20 @@ const collectEmployees = function () {
         const lastName = prompt("Enter the employee's last name:");
         let salary = prompt("Enter the employee's salary:");
     
-    salary = isNaN(salary) ? 0 : Number(salary); 
+        salary = isNaN(salary) ? 0 : Number(salary); 
 
-    const employee = {
-        firstName: firstName;
-        lastName: lastName;
-        salary: salary;
-    }
-    employees.push(employee);
+        const employee = {
+            firstName: firstName;
+            lastName: lastName;
+            salary: salary
+        };
+
+        employees.push(employee);
     
-    addingEmployees = confirm("Do you want to add another employee?");
+        addingEmployees = confirm("Do you want to add another employee?");
     }
-    return employees; 
+    
+        return employees; 
     // TODO: Get user input to create and return an array of employee objects
 };
 collectEmployees();
