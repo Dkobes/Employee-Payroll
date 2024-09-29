@@ -9,24 +9,22 @@ const collectEmployees = function () {
         const firstName = prompt("Enter the employee's first name:");
         const lastName = prompt("Enter the employee's last name:");
         let salary = prompt("Enter the employee's salary:");
-    }
+    
     salary = isNaN(salary) ? 0 : Number(salary); 
 
     const employee = {
         firstName: firstName;
         lastName: lastName;
         salary: salary;
-
+    }
     employees.push(employee);
     
     addingEmployees = confirm("Do you want to add another employee?");
-
-    return employees; Return the array of employees
-
-    collectEmployees();
     }
+    return employees; 
     // TODO: Get user input to create and return an array of employee objects
 };
+collectEmployees();
 
 // Display the average salary
 const displayAverageSalary = function (employeesArray) {
